@@ -13,6 +13,23 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
+app.get('/who_we_are', function(request, response) {
+  response.render('pages/who_we_are');
+});
+
+app.get('/get_involved', function(request, response) {
+  response.render('pages/get_involved');
+});
+
+app.get('/start_hiring', function(request, response) {
+  response.render('pages/start_hiring');
+});
+
+// app.get('/find_support', function(request, response) {
+//   response.render('pages/find_support');
+// });
+
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });

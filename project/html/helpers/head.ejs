@@ -1,7 +1,6 @@
 <meta charset="UTF-8">
 <title>Base Web App</title>
 
-
 <!-- First we import our css files -->
 
 <!-- bootstrap css -->
@@ -13,8 +12,6 @@
 <!-- this app's own css -->
 <link rel="stylesheet" type="text/css" href="css/main.css"/>
 
-
-
 <!-- Next import js files -->
 
 <!-- first we import jquery -->
@@ -22,6 +19,34 @@
 
 <!-- then bootstrap -->
 <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script type="module">
+
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+
+    
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+    import { getAuth } from 'https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js';
+    import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js';
+    
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "<%=process.env.FIREBASE_API_KEY %>",
+      authDomain: "basewebapp-622d6.firebaseapp.com",
+      projectId: "basewebapp-622d6",
+      storageBucket: "basewebapp-622d6.appspot.com",
+      messagingSenderId: "421812317471",
+      appId: "1:421812317471:web:841ef9e133eb9860fe542a"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    
+  </script>
 
 <!-- then our app's own js file -->
 <script src="js/main.js"></script>
