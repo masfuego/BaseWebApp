@@ -1,6 +1,7 @@
 <html lang="en">
   <head>
     <%- include ("../helpers/head") %>
+  
   </head>
   <body>
     <div class="nav">
@@ -18,9 +19,43 @@
       <!-- <h1>Finding youth workers for yor church</h1> -->
     <div class="home">
       <h1>A youth worker for every church</h1>
-      <button class="menu3" onClick="handleSignIn()">Login</button>
+      <!-- <h3 style="text-align:center; color:grey">Coming soon</h3> -->
+      <!-- <button class="menu3" onClick="handleSignIn()">Login</button> -->
     </div>
-    
+
+
+    <!-- A button to open the popup form -->
+    <!-- <button class="open-button" onclick="openForm()">Open Form</button> -->
+
+    <!-- The form -->
+    <!-- <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Login</h1>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div> -->
+
+    <!-- script  -->
+    <!-- <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+      </script> -->
+      
+
+
       <!-- <h4>Find freelance youth workers for your church here and only pay for the hours worked.</h4> -->
       <!-- <p class="button2" style="float:center"><a class="a_class2" class="active"href="#about">Become</a></p> -->
 
@@ -72,11 +107,11 @@ By removing barriers and providing accountability for those interested in youth 
   <footer class="interlude3">
 <table style="width:50%">
     <tr>
-      <td><u>Who we are</u></td>
-      <td><u>Get involved</u></td>
-      <td><u>Apply</u></td>
+      <td><u></u> <a class="a_class2"href="who_we_are">Who we are</a></u></td>
+      <td><u></u> <a class="a_class2"href="get_involved">Get involved</a></u></td>
+      <td><a class="a_class2" href="start_hiring">Start hiring</a></td>
     </tr>
-    <tr>
+    <!-- <tr>
       <td>Our history</td>
       <td>Have your say</td>
       <td>Become a youth worker</td>
@@ -90,10 +125,11 @@ By removing barriers and providing accountability for those interested in youth 
       <td>Contact</td>
       <td>Share site</td>
       <td></td>
-    </tr>
+    </tr> -->
     <p style="float: right; margin-right: 35px;">ChurchCollabo.com</p>
   </table>
 
   </footer>
   </body>
+  <!-- <script src="signup.js"></script> -->
 </html>
